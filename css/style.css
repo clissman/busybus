@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/*Type & Main Layout*/
+
+h1 {    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FAFAFA;
+}
+
+
+h2 {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 0.15px;
+    color: #000000;
+}
+
+.caption {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #0277BD;
+}
+
+.caption--out-of-service {
+    color: #737373;
+}
+
+.caption--reroute {
+    color: #F4511E
+}
+
+.subtitle-1 {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.15px;
+    color: #303030;
+}
+
+.container {
+    width: 360px;
+    height: 640px;
+    margin: 50px auto;
+    border: 1px solid rgb(218, 218, 218);
+    overflow: hidden;
+}
+
+
+/* Material Design Elements */
+
+.material-container {                                   /* Hides box-shadow overflow */
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2),         /* 2 dp elevation */
+                0px 3px 4px rgba(0, 0, 0, 0.12), 
+                0px 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.status-bar {
+    height: 24px;   
+}
+
+.top-app-bar {
+    display: flex;  
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 360px;
+    height: 108px;
+    background-color: #03A9F4;
+}
+
+.top-app-bar h1 {
+    margin: 0 0 17px 0;
+    align-self: center;
+}
+
+.top-app-bar__icon-container {
+    height: 24px;
+    margin: 16px 16px 0 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-app-bar__icon-container img {
+    margin-left: 24px;
+}
+
+.top-app-bar__icon-container img:first-child { /* Aligns navigation icon left */
+    margin: 0 auto 0 0;
+}
+
+/*Bus Arrival Elements*/
+
+.buses {
+    height: calc(640px - 152px);
+    width: 360px;
+    overflow-y: scroll;
+}
+
+.bus {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.bus__destination {
+    display: flex;
+    flex-flow: column wrap;
+    order: 2;
+}
+
+.bus__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 58px;
+    height: 30px;
+    border: 1px solid #A8A8A8;
+    border-radius: 4px;
+    margin: 0 15px 0 15px;
+    order: 1;
+}
+
+.bus__time {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    margin: 0 15px 0 auto;
+    order: 3;
+}
+
+.bus__time h2 {
+    margin: 0;
+}
+
+.bus__time h2:nth-child(2) { /* Greys second arrival time if shown */
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1px;
+    color: #7A7A7A;
+}   
+
+.bus__time--out-of-service { 
+    color: #7A7A7A;
+}
+
+.bus__time--out-of-service::before { /*Inserts 'Resumes' on line before time for out of service lines*/
+    color: gray;
+    content: "Resumes\A";
+    white-space: pre;
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+}
