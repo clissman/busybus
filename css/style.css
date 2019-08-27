@@ -106,7 +106,7 @@ h2 {
     margin: 0 auto 0 0;
 }
 
-/*Bus Arrival Elements*/
+/*Bus Schedule Elements*/
 
 .buses {
     height: calc(640px - 152px);
@@ -152,7 +152,7 @@ h2 {
     margin: 0;
 }
 
-.bus__time h2:nth-child(2) { /* Greys second arrival time if shown */
+.bus__time h2:nth-child(2) { /* Greys second arrival time when shown */
     font-family: Roboto Condensed;
     font-style: normal;
     font-weight: bold;
