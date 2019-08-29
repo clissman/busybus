@@ -16,15 +16,20 @@ h1 {
 }
 
 
-h2 {
+li {
     font-family: Roboto Condensed;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
-    text-align: right;
+    text-align: left;
     letter-spacing: 0.15px;
     color: #000000;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .caption {
@@ -109,7 +114,7 @@ h2 {
 /*Bus Schedule Elements*/
 
 .buses {
-    height: calc(640px - 152px);
+    height: calc(640px - 132px);
     width: 360px;
     overflow-y: scroll;
 }
@@ -148,11 +153,12 @@ h2 {
     order: 3;
 }
 
-.bus__time h2 {
+.bus__time li {
     margin: 0;
+    text-align: right;
 }
 
-.bus__time h2:nth-child(2) { /* Greys second arrival time when shown */
+.bus__time li:nth-child(2) { /* Greys second arrival time when shown */
     font-family: Roboto Condensed;
     font-style: normal;
     font-weight: bold;
@@ -175,3 +181,4 @@ h2 {
     text-align: right;
     font-size: 14px;
 }
+
