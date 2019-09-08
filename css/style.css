@@ -103,11 +103,11 @@ ul {
     justify-content: flex-end;
 }
 
-.top-app-bar__icon-container img {
+.top-app-bar__icon-container svg {
     margin-left: 24px;
 }
 
-.top-app-bar__icon-container img:first-child { /* Aligns navigation icon left */
+.top-app-bar__icon-container svg:first-child { /* Aligns navigation icon left */
     margin: 0 auto 0 0;
 }
 
