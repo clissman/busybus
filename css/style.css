@@ -35,7 +35,7 @@ ul {
 .caption {
     font-family: Roboto Condensed;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.4px;
@@ -54,7 +54,7 @@ ul {
 .subtitle-1 {
     font-family: Roboto Condensed;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.15px;
@@ -161,7 +161,7 @@ ul {
 .bus__time li:nth-child(2) { /* Greys second arrival time when shown */
     font-family: Roboto Condensed;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     text-align: right;
@@ -171,6 +171,7 @@ ul {
 
 .bus__time--out-of-service { 
     color: #7A7A7A;
+    font-weight: 400;
 }
 
 .bus__time--out-of-service::before { /*Inserts 'Resumes' on line before time for out of service lines*/
